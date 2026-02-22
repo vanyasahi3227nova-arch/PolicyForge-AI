@@ -1,252 +1,339 @@
 # PolicyForge AI
+# PolicyForge AI  
+### AI-Powered Cybersecurity Policy Calculator for SMEs
 
-AI-Powered Cybersecurity Policy Calculator for SMEs
+![Status](https://img.shields.io/badge/status-active-success)
+![Version](https://img.shields.io/badge/version-1.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Architecture](https://img.shields.io/badge/architecture-AI%20%7C%20Automation%20%7C%20SQL-orange)
+![Framework Alignment](https://img.shields.io/badge/frameworks-NIST%20800--53%20%7C%20ISO%2027001-purple)
+![Built With](https://img.shields.io/badge/built%20with-AI%20Automation%20Platform-red)
 
-PolicyForge AI is an intelligent cybersecurity governance platform designed to help small and medium-sized enterprises (SMEs) assess their cybersecurity posture and automatically generate customized, standards-aligned cybersecurity policies, procedures, and risk mitigation documentation.
+---
 
-This project bridges the gap between complex cybersecurity frameworks and real-world implementation by transforming organizational inputs into actionable cybersecurity governance artifacts.
+## Overview
 
-Overview
+PolicyForge AI is an AI-powered cybersecurity governance platform that enables small and medium-sized enterprises (SMEs) to automatically generate customized cybersecurity policies, standards, and procedures aligned with globally recognized frameworks such as:
 
-Most SMEs lack the internal expertise, time, and budget required to develop formal cybersecurity policies aligned with recognized frameworks such as NIST or ISO 27001. PolicyForge AI solves this problem by acting as an AI-powered cybersecurity governance assistant.
+- NIST 800-53
+- ISO/IEC 27001
+- ISO/IEC 27002
 
-The system collects structured organizational information, computes risk exposure, and generates professional cybersecurity policies tailored specifically to the organization's risk profile, operational scale, and technical environment.
+The platform bridges the gap between cybersecurity standards and practical implementation by transforming organizational inputs into structured, professional cybersecurity documentation.
 
-PolicyForge AI enables organizations to transition from informal security practices to structured cyber governance.
+---
 
-Key Features
-AI-Generated Cybersecurity Policies
+## Live Application
 
-Automatically generates professional-grade cybersecurity policies including:
+**Access the live platform:**  
+https://policy-forge-ai.base44.app/
 
-Access Control Policy
+---
 
-Data Protection Policy
+## Table of Contents
 
-Incident Response Plan
+- Overview  
+- Problem Statement  
+- Solution  
+- Key Features  
+- System Architecture  
+- Technology Stack  
+- Workflow Architecture  
+- Database Architecture  
+- Automation Architecture  
+- Installation (Development Context)  
+- Usage  
+- Project Structure  
+- Security Considerations  
+- Roadmap  
+- Author  
+- License  
 
-Acceptable Use Policy
+---
 
-Vendor Risk Management Policy
+## Problem Statement
 
-Business Continuity and Recovery Plan
+Small and medium-sized enterprises face major challenges in implementing cybersecurity governance:
 
-Policies are tailored based on organizational risk posture.
+- Lack of cybersecurity expertise  
+- High cost of cybersecurity consultants  
+- Complex compliance requirements  
+- Absence of structured policy documentation  
+- Difficulty translating frameworks into actionable policies  
 
-Risk Assessment Engine
+This leaves SMEs vulnerable to:
 
-Evaluates cybersecurity risk across multiple domains:
+- Data breaches  
+- Compliance violations  
+- Operational disruptions  
+- Financial and reputational damage  
 
-Access control maturity
+---
 
-Infrastructure exposure
+## Solution
 
-Data sensitivity level
+PolicyForge AI provides an automated, AI-driven platform that:
 
-Cloud usage risk
+- Collects organizational cybersecurity context  
+- Analyzes risk posture  
+- Generates framework-aligned policies  
+- Exports professional cybersecurity documentation  
+- Logs usage analytics via backend automation  
 
-Third-party vendor risk
+---
 
-Governance maturity
+## Key Features
 
-Outputs:
+### AI-Powered Policy Generation
 
-Overall Cyber Risk Score
+Generates:
 
-Domain-specific risk scores
+- Cybersecurity Policies  
+- Cybersecurity Standards  
+- Cybersecurity Procedures  
 
-Cybersecurity maturity classification
+Based on:
 
-Framework Alignment
+- Organizational profile  
+- Infrastructure  
+- Risk exposure  
+- Security maturity  
 
-Policies are structured and mapped to established cybersecurity frameworks, including:
+---
 
-NIST Cybersecurity Framework (CSF)
+### Framework Alignment
 
-ISO/IEC 27001
+Outputs are aligned with:
 
-ISO/IEC 27002
+- NIST 800-53
+- ISO 27001
+- ISO 27002
+- Industry cybersecurity best practices
 
-CIS Critical Security Controls
+---
 
-This enables compliance readiness and audit preparedness.
+### Interactive AI Agent
 
-Automated Document Generation
+CyberAI agent performs:
 
-Generates exportable documentation in professional formats such as:
+- Organizational assessment  
+- Requirement gathering  
+- Policy generation  
+- Document formatting  
 
-Microsoft Word (.docx)
+---
 
-Plain text (.txt)
+### Automated Document Export
 
-Structured formatted policy documents
+Supports export of:
 
-Documents can be used for:
+- Word documents (.docx)
+- Text documents (.txt)
+- Structured governance documentation
 
-Compliance audits
+---
 
-Internal governance
+### Backend Automation and Logging
 
-Investor due diligence
+Integrated with:
 
-Vendor security requirements
+- Webhook automation
+- SQL database logging
+- Workflow orchestration pipelines
 
-Insurance readiness
+---
 
-Automation and Integration Architecture
+## System Architecture
 
-PolicyForge AI integrates with automation and backend systems including:
+### High-Level Architecture Diagram
+             ┌──────────────────────┐
+             │     User Interface   │
+             │   PolicyForge AI    │
+             └─────────┬──────────┘
+                       │
+                       ▼
+             ┌──────────────────────┐
+             │    AI Policy Agent   │
+             │   (Policy Generator) │
+             └─────────┬──────────┘
+                       │
+                       ▼
+             ┌──────────────────────┐
+             │   Document Generator │
+             │   (Policy Output)   │
+             └─────────┬──────────┘
+                       │
+            ┌──────────┴───────────┐
+            ▼                      ▼
+  ┌─────────────────┐   ┌─────────────────┐
+  │ Automation Layer │   │ SQL Database    │
+  │ (Webhook / Zap) │   │ User Tracking   │
+  └─────────────────┘   └─────────────────┘
+  
+---
 
-AI agent infrastructure for policy generation
+## Workflow Architecture
 
-Webhook-based automation workflows
+### Policy Generation Workflow
+User Input → AI Agent → Risk Analysis → Policy Generation → Document Export → Database Logging
 
-Zapier integration for workflow automation
 
-SQL database logging for user analytics
+---
 
-Backend policy generation pipelines
+### Automation Workflow
+Generate Document Button
+↓
+Webhook Trigger
+↓
+Automation Platform
+↓
+SQL Database Logging
+↓
+Document Delivery
 
-System Architecture
+---
 
-High-Level Flow:
+## Database Architecture
 
-User Input → AI Processing Engine → Risk Assessment → Policy Generation → Document Export → Automation Workflow → Database Logging
+### Table: CYBER_USERS_SIMPLE
 
-Core Components:
+| Column | Type | Description |
+|------|------|-------------|
+| ID | NUMBER | Unique identifier |
+| NAME | VARCHAR | User name |
+| EMAIL | VARCHAR | User email |
+| PROFESSIONAL_ROLE | VARCHAR | User role |
 
-Frontend
+---
 
-Web-based interface
+## Technology Stack
 
-User input forms
+### Frontend
 
-Policy generation UI
+- Web Application Interface
+- AI Chat Interface
 
-Backend
+### Backend
 
-AI policy generation agent
+- AI Policy Generation Engine
+- Automation Workflow System
+- Webhook Integration Layer
 
-Risk scoring engine
+### Database
 
-Workflow automation integration
+- Oracle SQL Database
 
-Database
+### Automation
 
-SQL-based user tracking
+- Webhooks
+- Workflow automation platform
 
-Assessment storage
+---
 
-Policy metadata logging
 
-Automation Layer
+---
 
-Webhooks
+## Usage
 
-Email delivery workflows
+### Step 1: Access the platform
 
-Document generation pipelines
+https://policy-forge-ai.base44.app/
 
-Repository Purpose
+---
 
-This repository contains the architecture, logic design, workflow automation configuration, and documentation for PolicyForge AI, including:
+### Step 2: Interact with AI Agent
 
-Product requirements
+Provide:
 
-Automation workflows
+- Organization description
+- Industry
+- Infrastructure
+- Security maturity
 
-Database integration logic
+---
 
-AI policy generation orchestration
+### Step 3: Generate Policy
 
-Backend integration design
+AI generates:
 
-Governance and risk modeling logic
+- Cybersecurity policy
+- Standards
+- Procedures
 
-Business Value
+---
 
-PolicyForge AI provides SMEs with:
+### Step 4: Download Document
 
-Affordable cybersecurity governance tooling
+Export professional cybersecurity governance document.
 
-Automated policy generation
+---
 
-Risk visibility and scoring
+## Security Considerations
 
-Compliance readiness
+The platform ensures:
 
-Professional cybersecurity documentation
+- Secure handling of user inputs  
+- Database integrity  
+- Automation workflow validation  
+- Controlled data storage  
 
-This reduces reliance on expensive cybersecurity consultants while improving organizational security posture.
+---
 
-Technical Skills Demonstrated
+## Roadmap
 
-This project demonstrates expertise in:
+Future enhancements include:
 
-Cybersecurity governance architecture
+- Cyber risk scoring engine  
+- Compliance readiness scoring  
+- Dashboard analytics  
+- Multi-framework mapping  
+- Continuous governance monitoring  
 
-Risk modeling and scoring systems
+---
 
-AI-assisted policy generation workflows
+## Business Value
 
-Automation and webhook integrations
+PolicyForge AI enables:
 
-SQL database architecture and integration
+- Automated cybersecurity governance  
+- Reduced reliance on consultants  
+- Improved cybersecurity posture  
+- Scalable compliance readiness  
 
-SaaS product system design
+---
 
-Backend workflow orchestration
+## Author
 
-Systems analysis and requirements engineering
+**Vanya Sahi**  
+Cybersecurity Strategist | AI Governance Builder | Systems Analyst  
 
-Target Users
+---
 
-Small and Medium Enterprises (SMEs)
+## Repository Purpose
 
-Startup founders
+This repository demonstrates:
 
-IT administrators
+- AI governance automation architecture  
+- Cybersecurity policy generation systems  
+- Workflow automation and database integration  
+- Enterprise-grade SaaS architecture design  
 
-Compliance managers
+---
 
-Cybersecurity consultants
+## Keywords
 
-Managed Service Providers (MSPs)
+cybersecurity  
+ai  
+policy generation  
+governance  
+risk assessment  
+automation  
+sql  
+nist  
+iso27001  
+saas  
+security architecture  
 
-Use Cases
 
-Generating cybersecurity policies for startups
 
-Preparing organizations for compliance audits
 
-Assessing organizational cybersecurity risk posture
-
-Supporting vendor security requirements
-
-Enhancing cybersecurity governance maturity
-
-Project Status
-
-Current Status: MVP Architecture Completed
-
-Core capabilities implemented:
-
-AI policy generation workflow
-
-Automation integrations
-
-SQL backend logging
-
-User input collection architecture
-
-Governance documentation generation
-
-Future roadmap includes:
-
-Enhanced risk scoring models
-
-Continuous posture monitoring
-
-Compliance gap analysis
-
-Advanced reporting dashboards
